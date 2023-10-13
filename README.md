@@ -1,24 +1,31 @@
-# An ML Model for Automating Case Appoval
+# An ML Model for Automating Case Approval
 
 
-## NON-TECHNICAL EXPLANATION OF YOUR PROJECT
-100 words to explain what your project is about to a general audience. 
+## Objectives and Summary
+The objective of this project was to prove out the concept of case attribute automated assignment based on other case attributes, to assess the potential value within case management applications. A publicly available data set of mortgage loan approvals was used, with the approval status (approved or declined) being the case attribute status we are aiming to predict. The following goals of the model are suggested to simulate a real scenario in which such a model might be used:
+- Any approved cases will go through numerous other case management steps including additional reviews. Therefore, false positives (automated approvals where the application should have been accepted) are not unrecoverable, but do impose a business cost, as the case progresses further than it should do before the wrong decision is identified, utlising unnecessary time for additional human review.
+- We assume that any cases that are rejected will be manually reviewed anyway, on the basis that no case rejection decision should be completely automated in the interest of a fair application process. Therefore, any wrongly rejected cases (false negatives) are quickly identified, at a lower cost than false positives.
+- As such, we'll assume that our goal is maximise specificity (true negatives / (true negatives + false positves)) since false positives have the greatest cost, and as a secondary goal, maximise sensitivity (true positives / (true positives + false negatives), as this will improve the value added by the machine learning model.
 
-## DATA
+Models considered to perform this task were k-nearest neighbor, logistic regression, decision tree, random forest, SVM and neural networks. After comparing performance on test data, the neural network was selected. Once hyper-parameters were selected, the model was re-trained and and final testing gave the following results:
+- Misclassification rate:
+- Specificity:
+- Sensitivity:
+
+The notebook attached presents only the final model, and does not include the various models build for comparison, or the hyper parameter tuning, although these methods are discussed in the following note.
+
+## Data
 A summary of the data you’re using, remembering to include where you got it and any relevant citations. 
 
-## MODEL 
+## Model
 A summary of the model you’re using and why you chose it. 
 
-## HYPERPARAMETER OPTIMSATION
+## Hyperparameters
 Description of which hyperparameters you have and how you chose to optimise them. 
 
-## RESULTS
+## Results
 A summary of your results and what you can learn from your model 
 
 You can include images of plots using the code below:
 ![Screenshot](image.png)
-
-## (OPTIONAL: CONTACT DETAILS)
-If you are planning on making your github repo public you may wish to include some contact information such as a link to your twitter or an email address. 
 
