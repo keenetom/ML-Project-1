@@ -8,9 +8,9 @@ The objective of this project was to prove out the concept of case attribute aut
 - As such, we'll assume that our goal is maximise specificity (true negatives / (true negatives + false positves)) since false positives have the greatest cost, and as a secondary goal, maximise sensitivity (true positives / (true positives + false negatives), as this will improve the value added by the machine learning model.
 
 Models considered to perform this task were k-nearest neighbor, logistic regression, decision tree, random forest, SVM and neural networks. After comparing performance on test data, the neural network was selected. Once hyper-parameters were selected, the model was re-trained and and final testing gave the following results:
-- Misclassification rate: 36.7%
-- Specificity: 63.3%
-- Sensitivity: 63.3%
+- Misclassification rate: 35.0%
+- Specificity: 70.7%
+- Sensitivity: 62.0%
 
 The notebook attached presents only the final model, and does not include the various models build for comparison, or the hyper parameter tuning, although these methods are discussed in the following note.
 
@@ -61,9 +61,9 @@ Note that all other methods were also subject to hyper parameter optimisation, h
 
 ## Results
 The final performance metric of the model presented are:
-- Misclassification rate: 36.7%
-- Specificity: 63.3%
-- Sensitivity: 63.3%
+- Misclassification rate: 35.0%
+- Specificity: 70.7%
+- Sensitivity: 62.0%
 
 Whilst the model can provide some good insight into whether or not a case is likely to be rejected / approved and can potentially offer some value in advising the reviewer, it is clear that a case management solution could not rely entirely on an ML model to make a decision based on this particular use case. However, the study does prove that there is potential value in using ML models to assign attributes to cases far more effectively than a naive approach.
 
