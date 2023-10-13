@@ -1,6 +1,6 @@
 # Model Card
 
-See the [example Google model cards](https://modelcards.withgoogle.com/model-reports) for inspiration. 
+An ML Model for Automating Case Approval - Neural Network
 
 ## Model Description
 
