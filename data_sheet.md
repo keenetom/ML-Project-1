@@ -1,43 +1,41 @@
 # Datasheet Template
 
-As far as you can, complete the model datasheet. If you have got the data from the internet, you may not have all the information you need, but make sure you include all the information you do have. 
+Publicly available data URL: https://www.kaggle.com/datasets/rishikeshkonapure/home-loan-approval/data
 
 ## Motivation
 
-- For what purpose was the dataset created? 
-- Who created the dataset (e.g., which team, research group) and on behalf of which entity (e.g., company, institution, organization)? Who funded the creation of the dataset?
+- The dataset was created for the purpose of automating the process of assessing loan eligibility for home loan applications.
+- The data set was provided by  Analytics Vidhya on behalf of the Dream Housing Finance company. The exact source of funding is not clear to the author of the datasheet.
 
  
 ## Composition
 
-- What do the instances that comprise the dataset represent (e.g., documents, photos, people, countries)? 
-- How many instances of each type are there? 
-- Is there any missing data?
-- Does the dataset contain data that might be considered confidential (e.g., data that is protected by legal privilege or by    doctor–patient confidentiality, data that includes the content of individuals’ non-public communications)?
+- Each data instance represents a single loan application made by an individual or pair of individuals.
+- There are 614 unique instances, of which 422 represent approved applications, and 192 represent rejected applications.
+- There is some missing data. Of the 614 instances, 134 instances have one or more attribute values missing, leaving 480 complete data points. 
+- The dataset does contain personal information in the form of the Applicant's income. Whilst they is no direct method of identifying individuals from the dataset, a unique Loan ID is provided. It may be possible to use this ID to idenitfy the individual associated with the loan application.
 
 ## Collection process
 
-- How was the data acquired? 
-- If the data is a sample of a larger subset, what was the sampling strategy? 
-- Over what time frame was the data collected?
+- The data does represent a sample of a larget dataset.
+- The data collection process, including how the data was aquired, how it was sample and when it was sampled is not clear to the author of the data sheet.
+- The dataset was published publicly in February 2023, although this does not necessary indicate the collection data of the process.
 
 ## Preprocessing/cleaning/labelling
 
-- Was any preprocessing/cleaning/labeling of the data done (e.g., discretization or bucketing, tokenization, part-of-speech tagging, SIFT feature extraction, removal of instances, processing of missing values)? If so, please provide a description. If not, you may skip the remaining questions in this section. 
-- Was the “raw” data saved in addition to the preprocessed/cleaned/labeled data (e.g., to support unanticipated future uses)? 
+- The dataset has been provided with a 'Loan_Status' label, indicating if the loan application was approved ('Y') or rejected ('N').
+- It is not clear to the author of the datasheet if any cleaning or pre-processing of the data was performed. 
  
 ## Uses
 
-- What other tasks could the dataset be used for? 
-- Is there anything about the composition of the dataset or the way it was collected and preprocessed/cleaned/labeled that might impact future uses? For example, is there anything that a dataset consumer might need to know to avoid uses that could result in unfair treatment of individuals or groups (e.g., stereotyping, quality of service issues) or other risks or harms (e.g., legal risks, financial harms)? If so, please provide a description. Is there anything a dataset consumer could do to mitigate these risks or harms? 
-- Are there tasks for which the dataset should not be used? If so, please provide a description.
+- The dataset's primary suitable use is to predict whether or not a loan application will be approved or rejected. The authors have also proposed that the dataset can be used to performing Univariate and Bivariate analysis.
 
 ## Distribution
 
-- How has the dataset already been distributed? 
-- Is it subject to any copyright or other intellectual property (IP) license, and/or under applicable terms of use (ToU)?  
+- The dataset is publically available on Kaggle.com via the web URL https://www.kaggle.com/datasets/rishikeshkonapure/home-loan-approval/data.
+- The data has a CC0: Public Domain licence (the data has been dedicated to the public domain)
 
 ## Maintenance
 
-- Who maintains the dataset?
+- There is no ongoing maintaince of the dataset.
 
